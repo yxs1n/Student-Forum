@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Notes | AcademicNexus</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="type/javascript" src="main.js"></script>
+</head>
+<header>
+    <div class="linkcontainer">
+        <div id="branding">
+            <a href="index.html"><span class="logo"><img src="Logo.png" alt="Logo" width= 100 height= 100></span></a>
+    </div>
+    <nav>
+        <ul>
+            <li> <a href="index.html">Home</a></li>
+            <li> <a href="studymaterials.html">Study Materials</a></li>
+            <li> <a href="calendar.html">Calendar</a></li>
+            <li><a href="studentinfo.html">Student Information</a></li>
+            <li><a href="forum.html">Forum</a></li>
+            <li> <a href="feedback.html">Feedback Hub</a></li>
+        </ul>
+    </nav>
+</div>
+</header>
+<main>
+    <section id="hero">
+        <div class="hero-container">
+            <h1>Feedback Hub</h1>
+            
+        </div>
+    </section>  
+    <section id="feedback">
+        <div class="feedback-container"> <h2> Feedback Submission </h2></div>
+    <form action="submit_feedback.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="feedbackType">Feedback Type:</label>
+        <select id="feedbackType" name="feedbackType" required>
+            <option value="bug">Bug Report</option>
+            <option value="feature">Feature Request</option>
+            <option value="comment">General Comment</option>
+        </select>
+
+        <label for="feedback">Feedback:</label>
+        <textarea class="feedback-submission" name="feedback" rows="4" required style="width: 500px;"></textarea>
+
+        <button type="submit">Submit Feedback</button>
+    </form>
+</div>
+</section>
+<footer>
+    <p>
+        <i>
+             &copy; 2023 | AcademicNexus 
+        </i>
+    </p>
+</footer>
+</main>
+</body>
+</html>
